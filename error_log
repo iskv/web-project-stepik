@@ -1,0 +1,7 @@
+2020/07/06 08:57:49 [error] 3898#3898: *3 open() "/home/box/web/public/est.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /est.jpg HTTP/1.1", host: "localhost"
+2020/07/06 09:02:28 [error] 4348#4348: *1 open() "/home/skvich/web/public/est.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /est.jpg HTTP/1.1", host: "localhost"
+2020/07/06 09:07:13 [error] 4536#4536: *2 open() "/home/skvich/web/public/pix.jp" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /pix.jp HTTP/1.1", host: "localhost"
+2020/07/06 09:07:25 [error] 4536#4536: *2 directory index of "/home/skvich/web/uploads/" is forbidden, client: 127.0.0.1, server: , request: "GET /uploads/ HTTP/1.1", host: "localhost"
+2020/07/06 09:08:28 [error] 4536#4536: *2 open() "/home/skvich/web/public/upload/ing.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /upload/ing.jpg HTTP/1.1", host: "localhost"
+2020/07/06 09:08:43 [error] 4536#4536: *2 open() "/home/skvich/web/uploads/ing.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /uploads/ing.jpg HTTP/1.1", host: "localhost"
+2020/07/06 09:10:18 [error] 4644#4644: *3 open() "/home/skvich/web/public/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /test.jpg HTTP/1.1", host: "localhost"
