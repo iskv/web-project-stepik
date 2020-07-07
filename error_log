@@ -5,3 +5,6 @@
 2020/07/06 09:08:28 [error] 4536#4536: *2 open() "/home/skvich/web/public/upload/ing.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /upload/ing.jpg HTTP/1.1", host: "localhost"
 2020/07/06 09:08:43 [error] 4536#4536: *2 open() "/home/skvich/web/uploads/ing.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /uploads/ing.jpg HTTP/1.1", host: "localhost"
 2020/07/06 09:10:18 [error] 4644#4644: *3 open() "/home/skvich/web/public/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /test.jpg HTTP/1.1", host: "localhost"
+2020/07/07 05:59:08 [error] 7503#7503: *6 open() "/home/skvich/web/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
+2020/07/07 06:08:50 [error] 2206#2206: *4 open() "/home/skvich/web/public/hello/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /hello/test.jpg HTTP/1.1", host: "127.0.0.1"
+2020/07/07 06:09:08 [error] 2206#2206: *4 open() "/home/skvich/web/public/hello/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /hello/test.jpg?a=1 HTTP/1.1", host: "127.0.0.1"
