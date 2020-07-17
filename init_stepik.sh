@@ -1,5 +1,5 @@
 # Configuring nginx
-sudo ln -sf /home/box/web/etc/nginx_wsl.conf /etc/nginx/sites-enabled/test.conf
+sudo ln -sf /home/box/web/etc/nginx_stepik.conf /etc/nginx/sites-enabled/test.conf
 sudo rm -rf /etc/nginx/sites-enabled/default
 # Restart nginx
 sudo /etc/init.d/nginx stop
