@@ -8,3 +8,11 @@
 2020/07/07 05:59:08 [error] 7503#7503: *6 open() "/home/skvich/web/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1"
 2020/07/07 06:08:50 [error] 2206#2206: *4 open() "/home/skvich/web/public/hello/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /hello/test.jpg HTTP/1.1", host: "127.0.0.1"
 2020/07/07 06:09:08 [error] 2206#2206: *4 open() "/home/skvich/web/public/hello/test.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /hello/test.jpg?a=1 HTTP/1.1", host: "127.0.0.1"
+2020/07/16 19:56:39 [info] 1880#1880: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/16 19:56:39 [info] 1880#1880: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 13:40:20 [info] 259#259: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 13:40:20 [info] 259#259: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 17:37:01 [error] 1070#1070: *2 open() "/home/ivan/web/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2020/07/17 17:38:01 [info] 1070#1070: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 17:40:03 [info] 1160#1160: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 17:42:12 [info] 1160#1160: *5 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80

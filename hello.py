@@ -1,5 +1,8 @@
 # Application
-def app(environ, start_response):	
+def app(environ, start_response):
+	"""
+	Return list of received parameters; each parameter on new line. 
+	"""	
 	url_param = environ['QUERY_STRING'].split('&')
 	url_param = [param + '\n' for param in url_param]
 	
