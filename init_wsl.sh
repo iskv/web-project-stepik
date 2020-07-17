@@ -4,6 +4,7 @@ sudo ln -sf /home/ivan/web/etc/nginx_wsl.conf /etc/nginx/conf.d/test.conf
 sudo /etc/init.d/nginx stop
 sudo /etc/init.d/nginx start
 # Run gunicorn
-cd ~/web/ask
+cd ~/web
 gunicorn -b 0.0.0.0:8080 hello:app
+cd ~/web/ask
 gunicorn ask.wsgi
