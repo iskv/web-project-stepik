@@ -13,7 +13,7 @@ class Questions(models.Model):
 class Answer(models.Model):
     text = models.TextField()
     added_at = models.DateTimeField(auto_now_add=True)
-    question = models.ForeignKey(Questions, on_delete=models.SET_NULL, null=True)
+    question = models.ForeignKey(Questions, on_delete=models.CASCADE)
     author = models.CharField(max_length=255)
 
 
