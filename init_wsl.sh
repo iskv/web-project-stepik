@@ -5,6 +5,6 @@ sudo /etc/init.d/nginx stop
 sudo /etc/init.d/nginx start
 # Run gunicorn
 cd ~/web
-gunicorn -b 0.0.0.0:8080 hello:app --daemon
+gunicorn -c /home/ivan/web/etc/hello_wsl.conf.py hello:app
 cd ~/web/ask
-gunicorn -b 0.0.0.0:8000 ask.wsgi --daemon
+gunicorn -c /home/ivan/web/etc/ask_wsl.conf.py ask.wsgi

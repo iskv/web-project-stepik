@@ -16,3 +16,49 @@
 2020/07/17 17:38:01 [info] 1070#1070: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
 2020/07/17 17:40:03 [info] 1160#1160: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
 2020/07/17 17:42:12 [info] 1160#1160: *5 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 18:55:01 [info] 2684#2684: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 18:55:01 [info] 2684#2684: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 18:59:02 [info] 2865#2865: *3 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 18:59:09 [info] 2865#2865: *4 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 18:59:29 [info] 2865#2865: *6 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 18:59:32 [info] 2865#2865: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 18:59:32 [info] 2865#2865: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:00:27 [info] 2865#2865: *8 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:00:46 [info] 2865#2865: *13 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 19:01:25 [info] 2865#2865: *11 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:01:53 [info] 2865#2865: *12 client 127.0.0.1 closed keepalive connection
+2020/07/17 19:02:58 [info] 2865#2865: *16 client 127.0.0.1 closed keepalive connection
+2020/07/17 19:02:58 [info] 2865#2865: *17 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:06:10 [info] 3265#3265: *1 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 19:07:30 [error] 3265#3265: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 19:07:32 [error] 3265#3265: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://0.0.0.0:8000/", host: "127.0.0.1"
+2020/07/17 19:08:42 [info] 3323#3323: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:10:25 [info] 3323#3323: *6 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:12:03 [info] 3323#3323: *19 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 19:12:04 [info] 3323#3323: *4 client 127.0.0.1 closed keepalive connection
+2020/07/17 19:15:25 [info] 3620#3620: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:31:40 [info] 5058#5058: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:31:40 [info] 5058#5058: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:31:48 [info] 5058#5058: *5 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:45:02 [info] 5832#5832: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:45:02 [info] 5832#5832: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:47:16 [info] 5896#5896: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:47:16 [info] 5896#5896: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:47:36 [info] 5896#5896: *9 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:48:22 [info] 5896#5896: *4 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:48:24 [info] 5896#5896: *6 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:50:26 [info] 5896#5896: *16 client 127.0.0.1 closed keepalive connection
+2020/07/17 20:50:58 [info] 5896#5896: *13 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:50:58 [info] 5896#5896: *14 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:53:13 [info] 5967#5967: *1 client 127.0.0.1 closed keepalive connection
+2020/07/17 20:55:19 [info] 6002#6002: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:55:20 [info] 6002#6002: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:55:26 [info] 6002#6002: *6 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:56:30 [info] 6036#6036: *2 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:56:30 [info] 6036#6036: *3 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:56:40 [info] 6036#6036: *5 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 20:58:06 [info] 6036#6036: *11 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 21:25:44 [info] 6182#6182: *1 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/17 21:26:47 [error] 6269#6269: *3 open() "/home/ivan/web/public/static/admin/css/base.css" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /static/admin/css/base.css HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/admin/login/?next=/admin/"
+2020/07/17 21:26:47 [error] 6269#6269: *4 open() "/home/ivan/web/public/static/admin/css/login.css" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /static/admin/css/login.css HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/admin/login/?next=/admin/"
+2020/07/17 21:26:47 [error] 6269#6269: *8 open() "/home/ivan/web/public/static/admin/css/responsive.css" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /static/admin/css/responsive.css HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/admin/login/?next=/admin/"
