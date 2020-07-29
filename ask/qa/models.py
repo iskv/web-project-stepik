@@ -8,6 +8,7 @@ class Question(models.Model):
     rating = models.IntegerField(default=0)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     likes = models.ManyToManyField(User, related_name='question_like_user')
+    objects = QuestionManager()
 
 
 class Answer(models.Model):
