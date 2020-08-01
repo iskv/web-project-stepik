@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 class QuestionManager(models.Manager):
     def new(self):
@@ -16,6 +17,9 @@ class Question(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     likes = models.ManyToManyField(User, related_name='question_like_user')
     objects = QuestionManager()
+
+    def __str__(self):
+        return self.title
 
 
 class Answer(models.Model):

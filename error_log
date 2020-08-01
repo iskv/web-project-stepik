@@ -70,3 +70,5 @@
 2020/07/29 19:22:49 [info] 9866#9866: *4 client 127.0.0.1 closed keepalive connection
 2020/07/29 19:23:49 [info] 9866#9866: *15 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
 2020/07/29 19:23:49 [info] 9866#9866: *16 client 127.0.0.1 closed keepalive connection
+2020/07/29 19:25:44 [info] 9866#9866: *21 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2020/07/29 19:26:47 [info] 9866#9866: *29 client timed out (110: Connection timed out) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
