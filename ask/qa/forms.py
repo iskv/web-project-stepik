@@ -28,10 +28,8 @@ class AnswerForm(forms.Form):
         self.fields.get('question').choices = all_questions_with_pk
 
     def clean(self):
-        #self.cleaned_data['author'] = User(1) # placeholder
-        cleaned_data = super().clean()
-        pk = cleaned_data.get("question")
-        self.cleaned_data['question'] = Question.objects.get(pk=pk)
+        #self.cleaned_data['author'] = User(1) # placeholder        
+        self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
 
     def save(self):
         answer = Answer(**self.cleaned_data)

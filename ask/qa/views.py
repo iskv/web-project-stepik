@@ -31,7 +31,7 @@ def question(request, question_id):
     answers = question.answer_set.all()
 
     if request.method == 'POST':
-        form = AnswerForm(request.POST)         
+        form = AnswerForm(request.POST, initial={'question': question.pk})         
         if form.is_valid():            
             form.save()
             url = question.get_url()
