@@ -8,7 +8,9 @@ class AskForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
 
     def clean(self):
-        self.cleaned_data['author'] = User(1) # placeholder
+        user = User(username='user', password='pass') # placeholder
+        user.save() # placeholder
+        self.cleaned_data['author'] = user # placeholder
 
     def save(self):
         question = Question(**self.cleaned_data)
