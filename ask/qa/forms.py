@@ -17,11 +17,14 @@ class AskForm(forms.Form):
 
 
 class AnswerForm(forms.Form):
-    all_questions = Question.objects.all()
-    all_questions_with_pk = [(question.pk, question.title) for question in all_questions]
-
     text = forms.CharField(widget=forms.Textarea)
-    question = forms.ChoiceField(choices=all_questions_with_pk)
+    question = forms.ChoiceField()
+
+    def __init__(self, *args, **kwargs):
+        super(AnswerForm, self).__init__(*args, **kwargs)
+        all_questions = Question.objects.all()
+        all_questions_with_pk = [(question.pk, question) for question in all_questions]
+        self.fields.get('question').choices = all_questions_with_pk
 
     def clean(self):
         self.cleaned_data['author'] = User(1) # placeholder
