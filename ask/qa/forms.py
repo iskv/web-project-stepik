@@ -22,7 +22,7 @@ class AnswerForm(forms.Form):
 
     def clean(self):
         self.cleaned_data['author'] = User(1) # placeholder
-        self.cleaned_data['question'] = self.question_object
+        self.cleaned_data['question'] = self.question_object # using property
 
     def save(self):
         answer = Answer(**self.cleaned_data)
