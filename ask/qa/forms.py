@@ -20,7 +20,8 @@ class AnswerForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
     question = forms.ChoiceField()
 
-    def clean(self):     
+    def clean(self):   
+        print(self.cleaned_data)  
         self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
 
     def save(self):
