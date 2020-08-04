@@ -29,15 +29,19 @@ def popular(request):
 def question(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     answers = question.answer_set.all()
+    all_questions = Question.objects.all()
+    all_questions_with_pk = [(question.pk, question) for question in all_questions]
 
     if request.method == 'POST':
-        form = AnswerForm(request.POST, initial={'question': question.pk})         
+        form = AnswerForm(request.POST, initial={'question': (question.pk, question)})
+        form.fields['question'].choices = all_questions_with_pk         
         if form.is_valid():            
             form.save()
             url = question.get_url()
             return HttpResponseRedirect(url)
     else:
-        form = AnswerForm()
+        form = AnswerForm(initial={'question': (question.pk, question)})
+        form.fields['question'].choices = all_questions_with_pk
 
     return render(request, 'qa/question.html', {
         'question': question,
