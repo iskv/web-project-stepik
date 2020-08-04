@@ -20,8 +20,12 @@ class AnswerForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
     question = forms.ChoiceField()
 
-    def clean(self):   
-        print(self.cleaned_data)  
+    def clean(self):
+        # for stepik start
+        if self.data.get('question_id'):
+            self.cleaned_data['question'] = self.data.get('question_id')
+        print('test',self.data)
+        # for stepik stop           
         self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
 
     def save(self):
