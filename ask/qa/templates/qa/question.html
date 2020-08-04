@@ -3,3 +3,9 @@
 {% for answer in answers %}
 	<li>{{answer.text}}</li>
 {% endfor %}
+
+<form method="post" action="">
+{% csrf_token %}
+{{ form.as_ul }}
+<input type="submit" value="Submit" />
+</form>
