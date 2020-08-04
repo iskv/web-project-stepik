@@ -32,7 +32,7 @@ def question(request, question_id):
 
     if request.method == 'POST':
         form = AnswerForm(request.POST)
-        form.question_object = question # property
+        #form.question_object = question # property
         if form.is_valid():            
             form.save()
             url = question.get_url()

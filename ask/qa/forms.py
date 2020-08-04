@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 class AskForm(forms.Form):
     title = forms.CharField()
     text = forms.CharField(widget=forms.Textarea)
-    author = forms.IntegerField() # placeholder
 
     def clean(self):
         self.cleaned_data['author'] = User(1) # placeholder
@@ -18,13 +17,15 @@ class AskForm(forms.Form):
 
 
 class AnswerForm(forms.Form):
+    all_questions = Question.objects.all()
+    all_questions_with_pk = [(question.pk, question) for question in all_questions]
+
     text = forms.CharField(widget=forms.Textarea)
-    question = forms.EmailField()
-    author = forms.IntegerField() # placeholder
+    question = forms.ChoiceField(choices=all_questions_with_pk)
 
     def clean(self):
         self.cleaned_data['author'] = User(1) # placeholder
-        self.cleaned_data['question'] = self.question_object # using property
+        self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
 
     def save(self):
         answer = Answer(**self.cleaned_data)
