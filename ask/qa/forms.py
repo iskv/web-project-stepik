@@ -8,7 +8,8 @@ class AskForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
 
     def clean(self):
-        self.cleaned_data['author'] = User(1)
+        #self.cleaned_data['author'] = User(1)
+        pass
 
     def save(self):
         question = Question(**self.cleaned_data)
@@ -27,9 +28,8 @@ class AnswerForm(forms.Form):
         self.fields.get('question').choices = all_questions_with_pk
 
     def clean(self):
-        self.cleaned_data['author'] = User(1) # placeholder
+        #self.cleaned_data['author'] = User(1) # placeholder
         self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
-        return self.cleaned_data
 
     def save(self):
         answer = Answer(**self.cleaned_data)
