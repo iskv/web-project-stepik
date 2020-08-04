@@ -32,6 +32,7 @@ def question(request, question_id):
     all_questions = Question.objects.all()
     all_questions_with_pk = [(question.pk, question) for question in all_questions]
 
+    print(request.POST)
     if request.method == 'POST':
         form = AnswerForm(request.POST, initial={'question': (question.pk, question)})
         form.fields['question'].choices = all_questions_with_pk         
