@@ -29,7 +29,8 @@ class AnswerForm(forms.Form):
 
     def clean(self):
         #self.cleaned_data['author'] = User(1) # placeholder
-        self.cleaned_data['question'] = Question.objects.get(pk=self.cleaned_data['question'])
+        pk = self.cleaned_data['question']
+        self.cleaned_data['question'] = Question.objects.get(pk=pk)
 
     def save(self):
         answer = Answer(**self.cleaned_data)
