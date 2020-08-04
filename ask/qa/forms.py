@@ -8,9 +8,7 @@ class AskForm(forms.Form):
     text = forms.CharField(widget=forms.Textarea)
 
     def clean(self):
-        user = User(username='user', password='pass') # placeholder
-        user.save() # placeholder
-        self.cleaned_data['author'] = user # placeholder
+        self.cleaned_data['author'] = User(1)
 
     def save(self):
         question = Question(**self.cleaned_data)
@@ -19,11 +17,11 @@ class AskForm(forms.Form):
 
 
 class AnswerForm(forms.Form):
-    all_questions = Question.objects.all()
-    all_questions_with_pk = [(question.pk, question) for question in all_questions]
+    #all_questions = Question.objects.all()
+    #all_questions_with_pk = [(question.pk, question) for question in all_questions]
 
     text = forms.CharField(widget=forms.Textarea)
-    question = forms.ChoiceField(choices=all_questions_with_pk)
+    #question = forms.ChoiceField(choices=all_questions_with_pk)
 
     def clean(self):
         self.cleaned_data['author'] = User(1) # placeholder
