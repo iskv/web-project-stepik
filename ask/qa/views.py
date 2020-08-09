@@ -55,7 +55,7 @@ def question(request, question_id):
         'form': form
     })
 
-@login_required(login_url='login')
+#@login_required(login_url='login')
 def ask(request):
     if request.method == 'POST':
         form = AskForm(request.POST)
