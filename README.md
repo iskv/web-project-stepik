@@ -3,10 +3,9 @@
 This project was created during the Stepik.org course: "Web-технологии". In this project, the following web application architecture is implemented (three-tier architecture):
 
 * Front-end server (gateway): nginx
-* Back-end server:
-  * Gunicorn (http server)
-    * Django application
-    * WSGI application
+* Back-end server: gunicorn (http server)
+  * Django application
+  * WSGI application
 * MySQL Database
   
 # Nginx
