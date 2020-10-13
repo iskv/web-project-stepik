@@ -28,11 +28,11 @@ Runs as a daemon on port 8000 with ask.wsgi (Django) and on port 8080 with hello
 Using the Django framework, a simple web application is implemented - "Question & Answer". Application data is stored in MySQL database.
 
 Avalible functionality:
-* Ask (topic)
-* Answer (comment)
+* Сreating questions
+* Сreating answers
 * Paginator
 * login / sign up
-* Popular asks / recent asks
+* Popular questions / recent questions
 
 Used functionality:
 * Django user registration
