@@ -73,6 +73,6 @@ Implemented models:
 # Initializations scripts (ssh)
 
 For deploying and run this web applications used:
-* 0_env_stepik.sh - to configure the sandbox environment
-* 1_mysql_stepik.sh - to configure the MySQL server
-* 2_init_stepik.sh - to run server / web application
+* `0_env_stepik.sh` - to configure the sandbox environment
+* `1_mysql_stepik.sh` - to configure the MySQL server
+* `2_init_stepik.sh` - to run server / web application
