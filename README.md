@@ -1,6 +1,6 @@
 # Web project Stepik
 
-This project was implemented during the passage of the Stepik.org course: "Web-технологии". In this project, the following web application architecture is implemented:
+This project was created during the Stepik.org course: "Web-технологии". In this project, the following web application architecture is implemented:
 
 * Front-end server (gate): nginx
 * Back-end servers:
