@@ -7,7 +7,7 @@ This project was created during the Stepik.org course: "Web-технологии
   * Gunicorn (http server)
     * Django application
     * WSGI application
-  * MySQL Database
+* MySQL Database
   
 # Nginx
 
