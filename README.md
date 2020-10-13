@@ -1,8 +1,8 @@
 # Web project Stepik
 
-This project was created during the Stepik.org course: "Web-технологии". In this project, the following web application architecture is implemented:
+This project was created during the Stepik.org course: "Web-технологии". In this project, the following web application architecture is implemented (three-tier architecture):
 
-* Front-end server (gate): nginx
+* Front-end server (gateway): nginx
 * Back-end server:
   * Gunicorn (http server)
     * Django application
@@ -11,7 +11,7 @@ This project was created during the Stepik.org course: "Web-технологии
   
 # Nginx
 
-Serves as a gate. Working on 80 port (default). Using /etc/nginx_stepik.conf (for Stepik.org sandbox) or for WSL: /etc/nginx_wsl.conf (difference in directory paths). Error logging is configured to the file: /error_log.
+Serves as a gateway. Working on 80 port (default). Using /etc/nginx_stepik.conf (for Stepik.org sandbox) or for WSL: /etc/nginx_wsl.conf (difference in directory paths). Error logging is configured to the file: /error_log.
 
 Configured routes:
 * All URLs starting with `/uploads/` (for example `/uploads/1.jpeg`) are served from the `../uploads` directory
@@ -22,11 +22,11 @@ Configured routes:
 
 # Gunicorn
 
-Runs as a daemon on port 8000 with ask.wsgi (django) and on port 8080 with hello: app (wsgi app).
+Runs as a daemon on port 8000 with ask.wsgi (Django) and on port 8080 with hello: app (WSGI app).
 
 # Django application
 
-Django implements a simple web application - "Question & Answer". 
+Using the Django framework, a simple web application is implemented - "Question & Answer". Application data is stored in MySQL database.
 
 Avalible functionality:
 * Ask (topic)
@@ -58,6 +58,21 @@ With a GET request, a form for entering data is displayed, with a POST request, 
 * queries like `/login/`:
 With a GET request, a form for entering data is displayed, with a POST request, the site is entered, and a redirect to the main page is returned.
 
+# WSGI application
 
+A simple python web application working directly with a web server (gunicorn) via the WSGI protocol without framework. Return list of received GET parameters. Each parameter on new line. 
 
+# MySQL Database
 
+Working on port 3306. 
+
+Implemented models:
+* Question
+* Answer
+
+# Initializations scripts (ssh)
+
+For deploying and run this web applications used:
+* 0_env_stepik.sh - to configure the sandbox environment
+* 1_mysql_stepik.sh - to configure the MySQL server
+* 2_init_stepik.sh - to run server / web application
