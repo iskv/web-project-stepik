@@ -65,7 +65,7 @@ A simple python web application working directly with a web server (gunicorn) vi
 
 Working on port 3306. 
 
-Implemented models:
+Implemented tables:
 * Question
 * Answer
 
